@@ -19,13 +19,16 @@ model Users {
 }
 
 model Dogs {
-  id        Int      @id @default(autoincrement())
-  name      String
-  age       Int
-  stature   String
-  pelage    String
-  details   String?
-  slug      String   @unique
-  imageUrl  String
-  createdAt DateTime @default(now())
+  id          Int      @id @default(autoincrement())
+  name        String
+  breed       String? 
+  age         Int
+  stature     String
+  pelage      String   
+  temperament String?  
+  details     String?  
+  slug        String   @unique
+  imageUrl    String
+  isAvailable Boolean  @default(true)
+  createdAt   DateTime @default(now())
 }

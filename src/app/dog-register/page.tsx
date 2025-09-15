@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Footer from "@/fragments/Footer";
 import Header from "@/fragments/Header";
 import { SectionItemSold } from "./styles";
 
@@ -74,7 +73,6 @@ export default function AddDog() {
         </form>
         {message && <p>{message}</p>}
       </SectionItemSold>
-      <Footer />
     </>
   );
 }

@@ -18,25 +18,25 @@ export function Sidebar({ active, setActive }: SidebarProps) {
       <Container sidebar={active.toString()} onClick={closeSidebar}>
         <FaArrowLeft onClick={closeSidebar} />
         <InfoList>
-          <Link href="#sobre" scroll={true}>
+          <Link href="/sobre" onClick={closeSidebar}>
             Sobre
           </Link>
         </InfoList>
 
         <InfoList>
-          <Link href="#como-escolher" scroll={true}>
+          <Link href="/como-escolher" onClick={closeSidebar}>
             Como escolher um pet?
           </Link>
         </InfoList>
 
         <InfoList>
-          <Link href="#adote-um-pet" scroll={true}>
-          Adote um pet
+          <Link href="/adote" onClick={closeSidebar}>
+            Adote um pet
           </Link>
         </InfoList>
 
         <InfoList>
-          <Link href="#contato" scroll={true}>
+          <Link href="/contato" onClick={closeSidebar}>
             Contato
           </Link>
         </InfoList>

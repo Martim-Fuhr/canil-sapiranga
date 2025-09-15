@@ -73,8 +73,8 @@ export function Header() {
     <HeaderSection>
       <nav className="h-full w-full flex">
         <UlList>
-          <InfoList>Sobre</InfoList>
-          <InfoList>Como escolher um pet?</InfoList>
+          <Link href="/sobre"><InfoList>Sobre</InfoList></Link>
+          <Link href="/como-escolher"><InfoList>Como escolher um pet?</InfoList></Link>
           <Link href={"/"}>
             <Image
               className="w-full"
@@ -84,8 +84,8 @@ export function Header() {
               height={114}
             />
           </Link>
-          <InfoList>Adote um pet</InfoList>
-          <InfoList>Contato</InfoList>
+          <Link href="/adote"><InfoList>Adote um pet</InfoList></Link>
+          <Link href="/contato"><InfoList>Contato</InfoList></Link>
         </UlList>
       </nav>
       {/* <Contact>Contato</Contact> */}
